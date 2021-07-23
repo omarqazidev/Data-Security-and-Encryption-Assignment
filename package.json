@@ -1,0 +1,27 @@
+{
+    "name": "algorithms",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "old-start": "ts-node ./index.ts",
+        "old-compile": "tsc -w --onSuccess",
+        "start:build": "tsc -w",
+        "start:run": "nodemon build/index.js",
+        "start": "concurrently npm:start:*"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    },
+    "dependencies": {
+        "@types/big-integer": "0.0.31",
+        "@types/node": "^14.0.27",
+        "@types/node-rsa": "^1.0.0",
+        "big-integer": "^1.6.48",
+        "concurrently": "^5.3.0",
+        "node": "^14.7.0",
+        "node-rsa": "^1.1.1"
+    }
+}
